@@ -1,29 +1,23 @@
 {
-  "name": "incheon.heroes",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "gh-pages": "^6.3.0",
-    "next": "15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "22.10.6",
-    "@types/react": "19.0.7",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
-  },
-  "homepage": "https://jace0615.github.io/",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
-    "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true",
     "start": "next start",
     "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.1.4"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "@eslint/eslintrc": "^3"
   }
 }
