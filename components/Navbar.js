@@ -1,34 +1,56 @@
 export default function Navbar() {
-    return (
-      <nav className="bg-blue-600 text-white px-6 py-4 fixed w-full z-50">
-        <div className="container mx-auto flex justify-between items-center">
-          {/* 로고 */}
-          <div className="text-2xl font-bold">Incheon World</div>
-  
-          {/* 메뉴 */}
-          <ul className="hidden md:flex space-x-6">
-            <li>
-              <a href="/" className="hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:underline">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-  
-          {/* 모바일 메뉴 버튼 */}
-          <button className="block md:hidden bg-white text-blue-600 px-4 py-2 rounded">
-            Menu
-          </button>
+  return (
+    <nav className="bg-white text-black px-6 py-4 flex w-full z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* 로고 */}
+        <img src="/logo.png" alt="translate img" className="h-15 mr-0" />
+
+        {/* 메뉴 */}
+        <div className="hidden md:flex space-x-8">
+        <div className="flex items-between space-x-40">
+          <div>
+            <a href="/history" className="text-black hover:pointer hover:underline font-bold">
+              HISTORY
+            </a>
+          </div>
+          <div>
+          <a href="/info" className="text-black hover:pointer hover:underline font-bold">
+          INFO
+            </a>
+          </div>
+          <div>
+            <a href="/shop" className="text-black hover:pointer hover:underline font-bold">
+              SHOP
+            </a>
+          </div>
+          <div>
+            <a href="/DAO" className="text-black hover:pointer hover:underline font-bold">
+              DAO
+            </a>
+          </div>
+          <div>
+            <a href="/info" className="text-black hover:pointer hover:underline font-bold">
+              INFO
+            </a>
+          </div>
         </div>
-      </nav>
-    );
-  }
+        </div>
+
+        {/* 언어, 연결 */}
+        <div className="hidden md:flex space-x-8">
+        <div className="flex items-center space-x-10">
+            <a href="/connnet" className="text-black hover:pointer">
+            <img src="/connect.png" alt="connect img" className="h-3.5 mr-0" />
+            </a>
+          </div>
+          <div className="flex items-center space-x-2">
+          <img src="/translate lg.png" alt="translate img" className="h-5 mr-0" />
+            <a href="/events" className="text-black hover:pointer font-bold">
+              KOR
+            </a>
+        </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
